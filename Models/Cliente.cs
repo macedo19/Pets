@@ -2,6 +2,7 @@
 namespace EcommerceAPI.Models{
     
     public class Cliente{
+        
         public int RG { get; set; }
 
         public string Nome { get; set; }

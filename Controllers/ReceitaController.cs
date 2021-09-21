@@ -2,7 +2,7 @@ using EcommerceAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceAPI.Controllers {
-    public class ServicosControllers {
+    public class ReceitaControllers {
         // Rota para usa da classe
         [ApiController]
         [Route("ecommerceapi/receita")]

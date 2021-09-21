@@ -1,0 +1,8 @@
+### Cadastrar Cliente
+POST https://localhost:5001/ecommerceapi/cliente/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Pizza",
+    "Preco": 2.30
+}

@@ -1,0 +1,7 @@
+c:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
+c:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\obj\Debug\net5.0\API.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
+c:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\obj\Debug\net5.0\API.AssemblyInfo.cs
+c:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\obj\Debug\net5.0\API.csproj.CoreCompileInputs.cache
+c:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cache

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\EcommerceAPI.csproj": {}
+    "c:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\EcommerceAPI.csproj": {
+    "c:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\EcommerceAPI.csproj",
-        "projectName": "EcommerceAPI",
-        "projectPath": "C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\EcommerceAPI.csproj",
+        "projectUniqueName": "c:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\API.csproj",
+        "projectName": "API",
+        "projectPath": "c:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\API.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\obj\\",
+        "outputPath": "c:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
