@@ -11,9 +11,10 @@ namespace EcommerceAPI.Controllers{
         //POST: ecommerceapi/cliente/cadastrar
         [HttpPost]
         [Route("cadastrar")]
-        public Cliente CadastrarCliente(Cliente cliente){
-            
-            return cliente ;
+        public Cliente CadastrarCliente([FromBody] Cliente cliente){
+            _context.Clientes.Add(cliente);
+            _context.SaveChanges();
+            return Created(" ", cliente);
         }
     }
 }
