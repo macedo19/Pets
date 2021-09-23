@@ -12,6 +12,7 @@ namespace EcommerceAPI.Controllers{
         [HttpPost]
         [Route("cadastrar")]
         public Cliente CadastrarCliente(Cliente cliente){
+            
             return cliente ;
         }
     }

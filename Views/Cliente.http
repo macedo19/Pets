@@ -3,6 +3,7 @@ POST https://localhost:5001/ecommerceapi/cliente/cadastrar
 Content-Type: application/json
 
 {
+    "RG" : 18123,
     "Nome" : "Pizza",
-    "Preco": 2.30
+    "Bairro": "Guarulhos"
 }

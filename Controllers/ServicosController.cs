@@ -2,18 +2,26 @@ using EcommerceAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceAPI.Controllers {
-    public class ServicosControllers {
-        // Rota para usa da classe
-        [ApiController]
-        [Route("ecommerceapi/servicos")]
-        public class ProdutosController : ControllerBase{
 
-            //POST: ecommerceapi/servicos/cadastrar
-            [HttpPost]
-            [Route("cadastrar")]
-            public Servicos CadastrarServicos(Servicos servicos){
-                return servicos ;
-            }
+    // Rota para usa da classe
+    [ApiController]
+    [Route("ecommerceapi/servicos")]
+    public class ServicoController : ControllerBase{
+
+        //POST: ecommerceapi/servicos/cadastrar
+        [HttpPost]
+        [Route("cadastrar")]
+        public Servico CadastrarServicosAction (Servico servico){
+
+            return servico ;
         }
+
+        //List
+
+
+        //Delete
+
+        //Update
     }
+    
 }
