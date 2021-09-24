@@ -1,4 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using EcommerceAPI.Models;
+using EcommerceAPI.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceAPI.Controllers {
@@ -6,22 +10,59 @@ namespace EcommerceAPI.Controllers {
     // Rota para usa da classe
     [ApiController]
     [Route("ecommerceapi/servicos")]
-    public class ServicoController : ControllerBase{
+    public class ServicoController : ControllerBase {
 
-        //POST: ecommerceapi/servicos/cadastrar
+        private readonly DataContext _context;
+        
+        public ServicoController(DataContext context) => _context = context;
+
+        // POST: ecommerceapi/servicos/cadastrar
         [HttpPost]
         [Route("cadastrar")]
-        public Servico CadastrarServicosAction (Servico servico){
-
-            return servico ;
+        public IActionResult Cadastrar([FromBody] Servico servico) {
+            _context.Servicos.Add(servico);
+            _context.SaveChanges();
+            return Created("", servico);
         }
 
-        //List
+        // GET: ecommerceapi/servicos/listar
+        [HttpGet]
+        [Route("listar")]
+        public IActionResult List() => Ok(_context.Servicos.ToList());
 
+        // POST: ecommerceapi/servicos/buscar/id
+        [HttpGet]
+        [Route("buscar/{id}")]
+        public IActionResult Buscar([FromRoute] int id) {
+            Servico servico = _context.Servicos.Find(id);
+            if (servico == null) {
+                return NotFound();
+            } else {
+                return Ok(servico);
+            }
+        }
 
-        //Delete
+        // DELETE: ecommerceapi/servicos/deletar/id
+        [HttpDelete]
+        [Route("deletar/{id}")]
+        public IActionResult Deletar([FromRoute] int id) {
+            Servico servico = _context.Servicos.FirstOrDefault(servico => servico.Id == id);
+            if (servico == null) {
+                return NotFound();
+            } else {
+                _context.Servicos.Remove(servico);
+                _context.SaveChanges();
+                return Ok(_context.Servicos.ToList());
+            }
+        }
 
-        //Update
+        // PUT: ecommerceapi/servicos/atualizar
+        [HttpPut]
+        [Route("atualizar")]
+        public IActionResult Atualizar([FromBody] Servico servico) {
+            _context.Servicos.Update(servico);
+            _context.SaveChanges();
+            return Ok(servico);
+        }
     }
-    
 }

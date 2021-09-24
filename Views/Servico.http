@@ -1,0 +1,32 @@
+### Cadastrar serviço
+POST https://localhost:5001/ecommerceapi/servicos/cadastrar
+Content-Type: application/json
+
+{
+    "Id": "1",
+    "CPF": "78932",
+    "Data": "2021-07-08",
+    "Titulo": "Titulo",
+    "Descricao": "Teste"
+}
+
+### Listar serviços
+GET https://localhost:5001/ecommerceapi/servicos/listar
+
+### Buscar serviço pelo ID
+GET https://localhost:5001/ecommerceapi/servicos/buscar/1
+
+### Alterar serviço
+PUT https://localhost:5001/ecommerceapi/servicos/atualizar
+Content-Type: application/json
+
+{
+    "Id": "1",
+    "CPF": "147963",
+    "Data": "2021-10-14",
+    "Titulo": "Titulo",
+    "Descricao": "Teste"
+}
+
+### Deletar serviço
+DELETE https://localhost:5001/ecommerceapi/servicos/deletar/1

@@ -32,3 +32,37 @@ C:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMER
 C:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\USER\Documents\BSI SISTEMAS\Desenvolvimento de Software\PROJETO ECOMMERCE PET\EcommerceAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.csproj.AssemblyReference.cache
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.AssemblyInfoInputs.cache
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.AssemblyInfo.cs
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.csproj.CoreCompileInputs.cache
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\ref\EcommerceAPI.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.pdb
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\appsettings.json
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\EcommerceAPI.exe
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\EcommerceAPI.deps.json
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\EcommerceAPI.runtimeconfig.json
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\EcommerceAPI.runtimeconfig.dev.json
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\EcommerceAPI.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\ref\EcommerceAPI.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\EcommerceAPI.pdb
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\staticwebassets\EcommerceAPI.StaticWebAssets.Manifest.cache
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\staticwebassets\EcommerceAPI.StaticWebAssets.xml
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\scopedcss\bundle\EcommerceAPI.styles.css
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.RazorTargetAssemblyInfo.cache
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.csproj.CopyComplete
+C:\Users\felip\Desktop\projetos\repositorios\Pets-Ecommerce\obj\Debug\net5.0\EcommerceAPI.genruntimeconfig.cache
