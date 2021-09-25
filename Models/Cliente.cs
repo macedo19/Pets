@@ -2,7 +2,6 @@
 namespace EcommerceAPI.Models{
     
     public class Cliente{
-        
         public int Id { get; set; }
 
         public string NomeTutor { get; set; }

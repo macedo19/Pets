@@ -7,7 +7,7 @@ namespace EcommerceAPI.Data {
         public DataContext(DbContextOptions<DataContext> options) : base(options){}  
 
         //Lista de propriedades das classes que vão virar tabelas no banco
-        public DbSet<Cliente> Produtos {get; set;}
+        public DbSet<Cliente> Clientes {get; set;}
         public DbSet<Servico> Servicos {get; set;}
     }
 }

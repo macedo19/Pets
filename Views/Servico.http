@@ -3,7 +3,6 @@ POST https://localhost:5001/ecommerceapi/servicos/cadastrar
 Content-Type: application/json
 
 {
-    "Id": "1",
     "CPF": "78932",
     "Data": "2021-07-08",
     "Titulo": "Titulo",
@@ -22,7 +21,7 @@ Content-Type: application/json
 
 {
     "Id": "1",
-    "CPF": "147963",
+    "CPF": "147968",
     "Data": "2021-10-14",
     "Titulo": "Titulo",
     "Descricao": "Teste"

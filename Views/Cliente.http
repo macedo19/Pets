@@ -3,7 +3,11 @@ POST https://localhost:5001/ecommerceapi/cliente/cadastrar
 Content-Type: application/json
 
 {
-    "RG" : 18123,
-    "Nome" : "Pizza",
-    "Bairro": "Guarulhos"
+    "CPF" : 18123,
+    "NomeTutor" : "João",
+    "Telefone" : "41998105689",
+    "NomePet" : "Sanfona",
+    "Especie": "Cachorro",
+    "Idade": 10,
+    "Porte": "Grande"
 }
