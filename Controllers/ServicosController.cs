@@ -20,10 +20,14 @@ namespace EcommerceAPI.Controllers {
         [HttpPost]
         [Route("cadastrar")]
         public IActionResult Cadastrar([FromBody] Servico servico) {
-            _context.Servicos.Add(servico);
-            _context.SaveChanges();
-            return Created("", servico);
+                _context.Servicos.Add(servico);
+                _context.SaveChanges();
+                return Created("", servico);
         }
+
+        [HttpGet]
+        [Route("listarCpf")]
+        public IActionResult ListCpf() => Ok(_context.Clientes.ToList());
 
         // GET: ecommerceapi/servicos/listar
         [HttpGet]
