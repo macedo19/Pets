@@ -30,8 +30,12 @@ namespace EcommerceAPI
         {
             //Configurar politica de CORS para receber da sua aplicação
             services.AddCors(
-                options => {
-                    options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin());   
+                options =>
+                {
+                    options.AddPolicy("CorsPolicy", builder => builder
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
                 }
             );
 
