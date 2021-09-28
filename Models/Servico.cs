@@ -8,6 +8,8 @@ namespace EcommerceAPI.Models {
 
         public string Nome {get; set;}
         public DateTime Data { get; set; }
+
+        public int Hora {get; set;}
         public string Descricao { get; set; }
     }
 }

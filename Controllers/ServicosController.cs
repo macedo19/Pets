@@ -19,15 +19,17 @@ namespace EcommerceAPI.Controllers {
         // POST: ecommerceapi/servicos/cadastrar
         [HttpPost]
         [Route("cadastrar")]
-        public IActionResult Cadastrar([FromBody] Servico servico) {
+        public IActionResult Cadastrar([FromBody] Servico servico) {           
+                Horarios horario = _context.Horarios.First(id => servico.Hora == servico.Hora);
+                if(horario.HorarioMarcado == 0){
+                    horario.HorarioMarcado = 1;
+                    horario.Hora = servico.Hora;
+                    _context.SaveChanges();
+                }
                 _context.Servicos.Add(servico);
                 _context.SaveChanges();
                 return Created("", servico);
         }
-
-        [HttpGet]
-        [Route("listarCpf")]
-        public IActionResult ListCpf() => Ok(_context.Clientes.ToList());
 
         // GET: ecommerceapi/servicos/listar
         [HttpGet]
@@ -37,8 +39,8 @@ namespace EcommerceAPI.Controllers {
         // POST: ecommerceapi/servicos/buscar/id
         [HttpGet]
         [Route("buscar/{id}")]
-        public IActionResult Buscar([FromRoute] int id) {
-            Servico servico = _context.Servicos.Find(id);
+        public IActionResult Buscar([FromRoute] int cpf) {
+            Servico servico = _context.Servicos.Find(cpf);
             if (servico == null) {
                 return NotFound();
             } else {

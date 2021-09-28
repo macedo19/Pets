@@ -26,9 +26,9 @@ namespace EcommerceAPI.Controllers{
             return Created(" ", cliente);
         }
 
-        // GET: ecommerceapi/cliente/listarCpf
+        // POST: ecommerceapi/cliente/cadastrar
         [HttpGet]
         [Route("listarCpf")]
-        public IActionResult List() => Ok(_context.Clientes.ToList());
+        public IActionResult ListCpf() => Ok(_context.Clientes.ToList());
     }
 }

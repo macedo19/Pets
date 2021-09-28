@@ -11,3 +11,11 @@ Content-Type: application/json
     "Idade": 10,
     "Porte": "Grande"
 }
+
+### Listar horarios
+GET https://localhost:5001/ecommerceapi/agenda/listarHorario
+
+### Adicionar horarios
+POST https://localhost:5001/ecommerceapi/agenda/iniciar
+
+
