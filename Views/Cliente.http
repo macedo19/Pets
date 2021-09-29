@@ -3,7 +3,7 @@ POST https://localhost:5001/ecommerceapi/cliente/cadastrar
 Content-Type: application/json
 
 {
-    "CPF" : 18123,
+    "CPF" : 1234567890123456,
     "NomeTutor" : "João",
     "Telefone" : "41998105689",
     "NomePet" : "Sanfona",
@@ -12,8 +12,14 @@ Content-Type: application/json
     "Porte": "Grande"
 }
 
+
+### Listar cliente
+GET https://localhost:5001/ecommerceapi/cliente/listar
+
+
 ### Listar horarios
 GET https://localhost:5001/ecommerceapi/agenda/listarHorario
+
 
 ### Adicionar horarios
 POST https://localhost:5001/ecommerceapi/agenda/iniciar

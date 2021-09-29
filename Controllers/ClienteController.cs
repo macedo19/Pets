@@ -5,30 +5,33 @@ using EcommerceAPI.Models;
 using EcommerceAPI.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EcommerceAPI.Controllers{
+namespace EcommerceAPI.Controllers
+{
 
     // Rota para usa da classe
     [ApiController]
     [Route("ecommerceapi/cliente")]
-    public class ClienteController : ControllerBase{
+    public class ClienteController : ControllerBase
+    {
 
         private readonly DataContext _context;
-        
+
         public ClienteController(DataContext context) => _context = context;
 
         //POST: ecommerceapi/cliente/cadastrar
         [HttpPost]
         [Route("cadastrar")]
-        public IActionResult CadastrarCliente([FromBody] Cliente cliente){
-        
+        public IActionResult CadastrarCliente([FromBody] Cliente cliente)
+        {
+
             _context.Clientes.Add(cliente);
             _context.SaveChanges();
             return Created(" ", cliente);
         }
 
-        // POST: ecommerceapi/cliente/cadastrar
+        // POST: ecommerceapi/cliente/listar
         [HttpGet]
-        [Route("listarCpf")]
-        public IActionResult ListCpf() => Ok(_context.Clientes.ToList());
+        [Route("listar")]
+        public IActionResult Listar() => Ok(_context.Clientes.ToList());
     }
 }

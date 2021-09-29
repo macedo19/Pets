@@ -14,7 +14,7 @@ Content-Type: application/json
 
 
 ### Listar CPF -- Novo Agendamento
-GET https://localhost:5001/ecommerceapi/cliente/listarCpf
+GET https://localhost:5001/ecommerceapi/cliente/listar
 
 ### Listar serviços
 GET https://localhost:5001/ecommerceapi/servicos/listar
