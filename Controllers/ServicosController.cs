@@ -5,30 +5,34 @@ using EcommerceAPI.Models;
 using EcommerceAPI.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EcommerceAPI.Controllers {
+namespace EcommerceAPI.Controllers
+{
 
     // Rota para usa da classe
     [ApiController]
     [Route("ecommerceapi/servicos")]
-    public class ServicoController : ControllerBase {
+    public class ServicoController : ControllerBase
+    {
 
         private readonly DataContext _context;
-        
+
         public ServicoController(DataContext context) => _context = context;
 
         // POST: ecommerceapi/servicos/cadastrar
         [HttpPost]
         [Route("cadastrar")]
-        public IActionResult Cadastrar([FromBody] Servico servico) {           
-                Horarios horario = _context.Horarios.Find(servico.Hora);
-                if(horario.HorarioMarcado == 0){
-                    horario.HorarioMarcado = 1;
-                    horario.Hora = servico.Hora;
-                    _context.SaveChanges();
-                }
-                _context.Servicos.Add(servico);
+        public IActionResult Cadastrar([FromBody] Servico servico)
+        {
+            Horarios horario = _context.Horarios.Find(servico.Hora);
+            if (horario.HorarioMarcado == 0)
+            {
+                horario.HorarioMarcado = 1;
+                horario.Hora = servico.Hora;
                 _context.SaveChanges();
-                return Created("", servico);
+            }
+            _context.Servicos.Add(servico);
+            _context.SaveChanges();
+            return Created("", servico);
         }
 
         // GET: ecommerceapi/servicos/listar
@@ -39,11 +43,15 @@ namespace EcommerceAPI.Controllers {
         // POST: ecommerceapi/servicos/buscar/id
         [HttpGet]
         [Route("buscar/{id}")]
-        public IActionResult Buscar([FromRoute] int cpf) {
+        public IActionResult Buscar([FromRoute] int cpf)
+        {
             Servico servico = _context.Servicos.Find(cpf);
-            if (servico == null) {
+            if (servico == null)
+            {
                 return NotFound();
-            } else {
+            }
+            else
+            {
                 return Ok(servico);
             }
         }
@@ -51,11 +59,15 @@ namespace EcommerceAPI.Controllers {
         // DELETE: ecommerceapi/servicos/deletar/id
         [HttpDelete]
         [Route("deletar/{id}")]
-        public IActionResult Deletar([FromRoute] int id) {
+        public IActionResult Deletar([FromRoute] int id)
+        {
             Servico servico = _context.Servicos.FirstOrDefault(servico => servico.Id == id);
-            if (servico == null) {
+            if (servico == null)
+            {
                 return NotFound();
-            } else {
+            }
+            else
+            {
                 _context.Servicos.Remove(servico);
                 _context.SaveChanges();
                 return Ok(_context.Servicos.ToList());
@@ -65,7 +77,8 @@ namespace EcommerceAPI.Controllers {
         // PUT: ecommerceapi/servicos/atualizar
         [HttpPut]
         [Route("atualizar")]
-        public IActionResult Atualizar([FromBody] Servico servico) {
+        public IActionResult Atualizar([FromBody] Servico servico)
+        {
             _context.Servicos.Update(servico);
             _context.SaveChanges();
             return Ok(servico);
