@@ -4,10 +4,8 @@ Content-Type: application/json
 
 {
     "CPF": "78932",
-    "Nome": "Calors",
     "Data": "2021-07-08",
-    "Hora": 8,
-    "Titulo": "Titulo",
+    "Hora": 11,
     "Descricao": "Teste"
 }
 
