@@ -29,9 +29,53 @@ namespace EcommerceAPI.Controllers
             return Created(" ", cliente);
         }
 
-        // POST: ecommerceapi/cliente/listar
+        // GET: ecommerceapi/cliente/listar
         [HttpGet]
         [Route("listar")]
         public IActionResult Listar() => Ok(_context.Clientes.ToList());
+
+        // GET: ecommerceapi/cliente/buscar/id
+        [HttpGet]
+        [Route("buscar/{id}")]
+        public IActionResult Buscar([FromRoute] int id)
+        {
+            Cliente cliente = _context.Clientes.Find(id);
+            if (cliente == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(cliente);
+            }
+        }
+
+        // DELETE: ecommerceapi/cliente/deletar/id
+        [HttpDelete]
+        [Route("deletar/{id}")]
+        public IActionResult Deletar([FromRoute] int id)
+        {
+            Cliente cliente = _context.Clientes.FirstOrDefault(cliente => cliente.Id == id);
+            if (cliente == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                _context.Clientes.Remove(cliente);
+                _context.SaveChanges();
+                return Ok(_context.Clientes.ToList());
+            }
+        }
+
+        // PUT: ecommerceapi/cliente/atualizar
+        [HttpPut]
+        [Route("atualizar")]
+        public IActionResult Atualizar([FromBody] Cliente cliente)
+        {
+            _context.Clientes.Update(cliente);
+            _context.SaveChanges();
+            return Ok(cliente);
+        }
     }
 }
