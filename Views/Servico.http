@@ -4,17 +4,15 @@ Content-Type: application/json
 
 {
     "CPF": "78932",
-    "Nome": "Calors",
     "Data": "2021-07-08",
     "Hora": 11,
-    "Titulo": "Titulo",
     "Descricao": "Teste"
 }
 
 
 
 ### Listar CPF -- Novo Agendamento
-GET https://localhost:5001/ecommerceapi/cliente/listarCpf
+GET https://localhost:5001/ecommerceapi/cliente/listar
 
 ### Listar serviços
 GET https://localhost:5001/ecommerceapi/servicos/listar
