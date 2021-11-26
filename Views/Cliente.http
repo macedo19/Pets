@@ -3,11 +3,12 @@ POST https://localhost:5001/ecommerceapi/cliente/cadastrar
 Content-Type: application/json
 
 {
-    "CPF" : 1234567890123456,
-    "NomeTutor" : "João",
+    
+    "NomeTutor" : "Pedro",
+    "CPF" : 12345670,
     "Telefone" : "41998105689",
     "NomePet" : "Sanfona",
-    "Especie": "Cachorro",
+    "Especie": "Gato",
     "Idade": 10,
     "Porte": "Grande"
 }

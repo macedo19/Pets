@@ -8,7 +8,7 @@ namespace EcommerceAPI.Models
 
         public string NomeTutor { get; set; }
 
-        public long CPF { get; set; }
+        public int CPF { get; set; }
 
         public string Telefone { get; set; }
 
