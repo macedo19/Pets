@@ -35,11 +35,11 @@ namespace EcommerceAPI.Controllers{
              return Ok();
         }
 
-        private static void AdicionarHorario(DataContext _context, int id, int disponivel, int hora){
-            _context.Horarios.Add( new Models.Horarios(){
-                Id = id,
-                HorarioMarcado = disponivel,
-                Hora = hora
+        private static void AdicionarHorario(DataContext _context, int horario, int disponivel, int hora)
+        {
+            _context.Horarios.AddRange(new Horarios[]
+            {
+                 new Horarios {Horario = horario, HorarioMarcado = disponivel, Hora = hora },
             });
         }
 
