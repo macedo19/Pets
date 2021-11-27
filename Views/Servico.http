@@ -5,7 +5,7 @@ Content-Type: application/json
 {
     "CPF": "78996",
     "Data": "2021-07-08",
-    "Hora": 10,
+    "Hora": 8,
     "Descricao": "Teste"
 }
 
@@ -35,4 +35,7 @@ Content-Type: application/json
 }
 
 ### Deletar serviço
-DELETE https://localhost:5001/ecommerceapi/servicos/deletar/1
+DELETE https://localhost:5001/ecommerceapi/servicos/deletar/7
+
+### Listar horario
+GET https://localhost:5001/ecommerceapi/agenda/listarHorario

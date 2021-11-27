@@ -68,6 +68,7 @@ namespace EcommerceAPI.Controllers
         public IActionResult Deletar([FromRoute] int id)
         {
             Servico servico = _context.Servicos.FirstOrDefault(servico => servico.Id == id);
+
             if (servico == null)
             {
                 return NotFound();
@@ -75,6 +76,10 @@ namespace EcommerceAPI.Controllers
             else
             {
                 _context.Servicos.Remove(servico);
+
+                Horarios horario = _context.Horarios.FirstOrDefault(horario => horario.Hora == servico.Hora);
+                horario.HorarioMarcado = 0;
+
                 _context.SaveChanges();
                 return Ok(_context.Servicos.ToList());
             }

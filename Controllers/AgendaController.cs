@@ -49,9 +49,9 @@ namespace EcommerceAPI.Controllers{
         public IActionResult ListHorario() => Ok(_context.Horarios.ToList());
 
         // GET: ecommerceapi/agenda/listarHorario
-      [HttpGet]
-      [Route("listarHorarioDisponivel")]
-       public IActionResult ListHorarioDisponiveis() => Ok(_context.Horarios.ToList());
+        [HttpGet]
+        [Route("listarHorarioDisponivel")]
+        public IActionResult ListHorarioDisponiveis() => Ok(_context.Horarios.ToList());
             
         
 
