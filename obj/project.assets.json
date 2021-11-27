@@ -5943,19 +5943,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\aninh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\EcommerceAPI.csproj",
+      "projectUniqueName": "C:\\Users\\aninh\\Desktop\\Facul\\4 Des Software Visual\\Trabalho\\Pets\\EcommerceAPI.csproj",
       "projectName": "EcommerceAPI",
-      "projectPath": "C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\EcommerceAPI.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\obj\\",
+      "projectPath": "C:\\Users\\aninh\\Desktop\\Facul\\4 Des Software Visual\\Trabalho\\Pets\\EcommerceAPI.csproj",
+      "packagesPath": "C:\\Users\\aninh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aninh\\Desktop\\Facul\\4 Des Software Visual\\Trabalho\\Pets\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\aninh\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6016,16 +6016,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\USER\\Documents\\BSI SISTEMAS\\Desenvolvimento de Software\\PROJETO ECOMMERCE PET\\EcommerceAPI\\obj\\project.nuget.cache: After parsing a value an unexpected character was encountered: \". Path 'expectedPackageFiles[101]', line 111, position 4."
-    }
-  ]
+  }
 }
