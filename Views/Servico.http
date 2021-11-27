@@ -3,9 +3,9 @@ POST https://localhost:5001/ecommerceapi/servicos/cadastrar
 Content-Type: application/json
 
 {
-    "CPF": "78932",
+    "CPF": "78996",
     "Data": "2021-07-08",
-    "Hora": 11,
+    "Hora": 10,
     "Descricao": "Teste"
 }
 

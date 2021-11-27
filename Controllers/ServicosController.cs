@@ -23,7 +23,7 @@ namespace EcommerceAPI.Controllers
         [Route("cadastrar")]
         public IActionResult Cadastrar([FromBody] Servico servico)
         {
-            Horarios horario = _context.Horarios.Find(servico.Hora);
+            Horarios horario = _context.Horarios.FirstOrDefault(s => s.Hora == servico.Hora);
             if (horario.HorarioMarcado == 0)
             {
                 horario.HorarioMarcado = 1;
