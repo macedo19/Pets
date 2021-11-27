@@ -24,6 +24,11 @@ namespace EcommerceAPI.Controllers
         public IActionResult Cadastrar([FromBody] Servico servico)
         {
             Horarios horario = _context.Horarios.FirstOrDefault(s => s.Hora == servico.Hora);
+            if (horario.HorarioMarcado != 0)
+            {
+                return BadRequest(new { message = "Este horário já está agendado" });
+            }
+
             if (horario.HorarioMarcado == 0)
             {
                 horario.HorarioMarcado = 1;
