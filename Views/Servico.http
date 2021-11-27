@@ -18,7 +18,9 @@ GET https://localhost:5001/ecommerceapi/cliente/listar
 GET https://localhost:5001/ecommerceapi/servicos/listar
 
 ### Buscar serviço pelo ID
-GET https://localhost:5001/ecommerceapi/servicos/buscar/1
+GET https://localhost:5001/ecommerceapi/servicos/buscar/78996
+
+
 
 ### Alterar serviço
 PUT https://localhost:5001/ecommerceapi/servicos/atualizar

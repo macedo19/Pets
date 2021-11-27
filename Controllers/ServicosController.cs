@@ -47,10 +47,11 @@ namespace EcommerceAPI.Controllers
 
         // POST: ecommerceapi/servicos/buscar/id
         [HttpGet]
-        [Route("buscar/{id}")]
+        [Route("buscar/{cpf}")]
         public IActionResult Buscar([FromRoute] int cpf)
         {
-            Servico servico = _context.Servicos.Find(cpf);
+
+            Servico servico = _context.Servicos.FirstOrDefault(c => c.CPF == cpf);
             if (servico == null)
             {
                 return NotFound();
